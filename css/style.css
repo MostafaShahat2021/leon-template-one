@@ -91,15 +91,16 @@ body {
 }
 
 .header .links ul {
+  position: absolute;
   list-style: none;
   margin: 0;
   padding: 0;
   background-color: #f1efef;
-  position: absolute;
   right: 0;
   min-width: 200px;
   top: calc(100% + 15px);
   display: none;
+  z-index: 1;
 }
 
 .header .links ul::before {
@@ -133,35 +134,34 @@ body {
 
 /* Landing section */
 .landing {
+  position: relative;
   background-image: url(../assets/landing.jpg);
-  background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
-  /* background-attachment: fixed; */
   height: calc(100vh - 64px);
 }
 
 .landing .intro-text {
-  /* border: 1px solid red; */
-  width: 50%;
-  height: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transform: translate(50%, 50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
   text-transform: capitalize;
-  /* text-wrap: pretty; */
+  text-align: center;
+  width: 320px;
+  max-width: 100%;
+  border: 1px solid red;
 }
 
 .landing .intro-text h1 {
+  margin: 0;
   font-size: 50px;
+  font-weight: bold;
   color: var(--main-color);
 }
 
 .landing .intro-text p {
-  font-size: 2rem;
-  /* text-align: center; */
+  font-size: 19px;
+  line-height: 1.8;
 }
 /* Landing section */
