@@ -170,31 +170,31 @@ body {
 /* Landing section */
 
 /* Features section */
-.Features {
-  border: 1px solid red;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 5%;
-  background-color: #ddd;
+.Features .container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
 }
 
 .Features .card {
-  width: 23%;
-  padding: 2%;
-  margin: 2%;
+  padding: 20px;
+  text-align: center;
 }
 
 .Features .card i {
   color: var(--main-color);
-  font-weight: bold;
   font-size: 50px;
-  margin-bottom: 5%;
-  /* padding: 2%; */
-  /* margin: 2%; */
+}
+
+.Features .card h3 {
+  font-weight: 800;
+  margin: 30px 0;
+}
+
+.Features .card p {
+  line-height: 1.8;
+  color: #777;
+  font-size: 17px;
 }
 
 /* Features section */
