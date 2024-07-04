@@ -196,5 +196,31 @@ body {
   color: #777;
   font-size: 17px;
 }
-
 /* Features section */
+
+/* Heading Component */
+.special-heading {
+  color: #ebeced;
+  text-align: center;
+  font-size: 100px;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: -3px;
+}
+
+.special-heading + p {
+  font-size: 20px;
+  text-align: center;
+  color: #797979;
+  margin: -30px 0 0;
+}
+
+@media (max-width: 768px) {
+  .special-heading {
+    font-size: 60px;
+  }
+  .special-heading + p {
+    margin-top: -20px;
+  }
+}
+/* Heading Component */
