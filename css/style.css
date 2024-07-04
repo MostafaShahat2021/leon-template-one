@@ -3,6 +3,7 @@
 :root {
   --main-color: #0fc8b5
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -123,12 +124,15 @@ body {
   color: #333;
   transition: 0.3s;
 }
-.header .links ul li a:hover{
+
+.header .links ul li a:hover {
   padding-left: 25px;
 }
+
 .header .links ul li:not(:last-child) a {
   border-bottom: 1px solid #ddd;
 }
+
 /* Header */
 
 /* Landing section */
@@ -162,4 +166,35 @@ body {
   font-size: 19px;
   line-height: 1.8;
 }
+
 /* Landing section */
+
+/* Features section */
+.Features {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5%;
+  background-color: #ddd;
+}
+
+.Features .card {
+  width: 23%;
+  padding: 2%;
+  margin: 2%;
+}
+
+.Features .card i {
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 5%;
+  /* padding: 2%; */
+  /* margin: 2%; */
+}
+
+/* Features section */
