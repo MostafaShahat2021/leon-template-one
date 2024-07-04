@@ -170,6 +170,12 @@ body {
 /* Landing section */
 
 /* Features section */
+
+.Features {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #f6f6f6;
+}
 .Features .container{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
